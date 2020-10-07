@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magda's BBC in CSS</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #topbar {
+        background-color: #7a0000;
+        width: 100%;
+        height: 40px;
+        color: white;
+      }
+      .fixedwidth {
+        width: 1150px;
+        margin: 0 auto;
+      }
+      #logodiv {
+        padding-top: 6px;
+        float: left;
+        border-right: 1px solid #990000;
+        padding-right: 10px;
+      }
+      #signindiv {
+        font-weight: bold;
+        font-size: 0.9em;
+        padding: 6px 80px 10px 5px;
+        float: left;
+        border-right: 1px solid #990000;
+      }
+      #signindiv img {
+        position: relative;
+        top: 3px;
+      }
+      #signindiv p {
+        padding-left: 20px;
+      }
+
+      #topmenudiv {
+        float: left;
+      }
+      #topmenudiv ul {
+        margin: 0;
+        padding: 0;
+      }
+      #topmenudiv li {
+        list-style: none;
+        font-weight: bold;
+        font-size: 0.95em;
+        border-right: 1px solid #990000;
+        height: 100%;
+        padding: 10px 20px 12px 20px;
+        float: left;
+      }
+      #searchbardiv {
+        float: left;
+        padding: 9px 0 0 15px;
+      }
+      #searchbardiv input {
+        height: 20px;
+        border: none;
+        padding-left: 4px;
+        background-image: url("images/search.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: 21px;
+      }
+      #newsbar {
+        background-color: #990000;
+        width: 100%;
+        height: 110px;
+        color: white;
+      }
+      .break {
+        clear: both;
+      }
+      #newsbar p {
+        padding-top: 15px;
+        float: left;
+      }
+      #newsheader {
+        font-size: 55px;
+      }
+      #UK {
+        font-size: 35px;
+      }
+      #rss {
+        float: right;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-top: 35px;
+      }
+      #menu {
+        color: white;
+      }
+
+      #menu ul {
+        background-color: #3e0c0d;
+        padding: 5px 0 0 5px;
+        margin-top: -30px;
+        height: 25px;
+        position: absolute;
+        width: 1150px;
+      }
+      #menu li {
+        list-style: none;
+        font-size: 0.9em;
+        float: left;
+        border-right: 1px solid #990000;
+        padding: 0px 10px 0px 10px;
+      }
+      .selected {
+        background-color: #ededed;
+        color: #666666;
+        height: 20px;
+        position: relative;
+        top: -4px;
+        padding-top: 9px !important;
+      }
+      #content {
+        width: 100%;
+        color: #535353;
+        font-size: 0.86em;
+        margin-top: 10px;
+      }
+      .date {
+        font-weight: bold;
+      }
+      h1 {
+        color: #1f4f82;
+        margin-top: 10px;
+        font-size: 2.5em;
+      }
+      .pollution {
+        height: 350px;
+        width: 450px;
+        margin-top: 10px;
+        float: left;
+      }
+      .newsitem {
+        padding-left: 10px;
+        margin-top: 6px;
+        float: left;
+        width: 280px;
+        font-size: 1.1em;
+      }
+      .newsitem a {
+        color: #1f4f82;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .video {
+        background-image: url("images/play.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 20px;
+      }
+      .sound {
+        background-image: url("images/sound.png");
+        background-repeat: no-repeat;
+        background-position: left;
+        padding-left: 20px;
+      }
+      .links {
+        line-height: 1.5em;
+      }
+      #watch {
+        float: right;
+        background-color: #eeeeee;
+        width: 375px;
+        position: relative;
+        top: -50px;
+      }
+      h2 {
+        color: #505050;
+        font-size: 25px;
+        margin: 10px 0 10px 10px;
+      }
+      .boxes {
+        float: right;
+        position: relative;
+        top: 15px;
+        padding-right: 10px;
+      }
+      .leftarrow {
+        float: left;
+        border-right: 1px solid white;
+      }
+
+      .wlblocks {
+        float: left;
+        background-color: #d1700e;
+        width: 161px;
+        border-right: 1px solid white;
+      }
+      .wlblocks a {
+        color: white;
+      }
+      .wlblocks p {
+        padding: 10px 5px 6px 10px;
+      }
+      .rightarrow {
+        float: left;
+      }
+      #live ul {
+      }
+      #live li {
+        list-style-image: url("images/live.png");
+        list-style-position: inside;
+        padding: 10px 20px 10px 10px;
+        color: #1f4f82;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+      .bb {
+        border-bottom: 1px solid #dddddd;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="topbar">
+        <div class="fixedwidth">
+          <div id="logodiv">
+            <img src="images/BBClogo.png" style="width: 90px; height:28px;" />
+          </div>
+          <div id="signindiv">
+            <p>
+              <img
+                src="images/signinBBC.png"
+                style="width:20px; height:20px;"
+              />
+              Sign In
+            </p>
+          </div>
+          <div id="topmenudiv">
+            <ul>
+              <li>News</li>
+              <li>Sport</li>
+              <li>Weather</li>
+              <li>IPlayer</li>
+              <li>TV</li>
+              <li>Radio</li>
+              <li>More...</li>
+            </ul>
+          </div>
+          <div id="searchbardiv" style="position:relative;">
+            <input type="text" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="break"></div>
+
+    <div id="newsbar">
+      <div class="fixedwidth">
+        <p id="newsheader">NEWS <span id="UK">UK</span></p>
+
+        <div id="rss">
+          <p>RSS</p>
+          <img src="images/RSS.png" style="height:20px; margin-top: 13px" />
+        </div>
+      </div>
+    </div>
+
+    <div class="break"></div>
+
+    <div id="menu">
+      <div class="fixedwidth">
+        <ul>
+          <li>Home</li>
+          <li>Word</li>
+          <li class="selected">UK</li>
+          <li>England</li>
+          <li>N.Ireland</li>
+          <li>Scotland</li>
+          <li>Wales</li>
+          <li>Business</li>
+          <li>Politics</li>
+          <li>Health</li>
+          <li>Education</li>
+          <li>Sci/Environment</li>
+          <li>Technology</li>
+          <li style="border-right:none;">Entertainment & Arts</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="break"></div>
+
+    <div id="content">
+      <div class="fixedwidth">
+        <p><span class="date">2 April 2014 </span> Last updated at 15:23</p>
+        <h1>Pollution to spread across England</h1>
+        <img class="pollution" src="images/pollution.jpeg" />
+        <div class="newsitem">
+          <p>
+            Forecasts that air pollution will reach high levels in parts of
+            England. Defra issued warnings as high pollution levels were
+            recorded on Tuesday.
+          </p>
+          <br />
+          <p class="links">
+            <a
+              class="video"
+              href="https://www.bbc.co.uk/news/av/uk-26848488/bbc-weather-why-are-pollution-levels-so-high"
+              target="_blank"
+            >
+              Why are polution levels so high?</a
+            >
+          </p>
+
+          <a
+            class="video"
+            href="https://www.bbc.co.uk/news/av/science-environment-26848489/sahara-dust-causes-sore-throats-and-dirty-cars"
+            target="_blank"
+          >
+            Sahara dust causes sore throats and dirty cars</a
+          >
+          <br />
+          <a
+            class="video"
+            href="https://www.bbc.co.uk/news/av/uk-26854586/how-saharan-dust-reached-the-uk"
+            target="_blank"
+          >
+            How Saharan dust reached the UK</a
+          >
+          <br />
+          <a href="https://www.bbc.co.uk/news/health-26850177"
+            >What will pollution do to us?</a
+          >
+          <br />
+          <a
+            class="sound"
+            href="https://www.bbc.co.uk/news/av/uk-26847723/air-pollution-serious-issue-says-public-health-england"
+            target="_blank"
+          >
+            Air pollution 'serious issue'</a
+          >
+        </div>
+        <div id="watch">
+          <h2>Watch/Listen <img class="boxes" src="images/boxes.png" /></h2>
+          <img src="images/arrowL.png" class="leftarrow" />
+          <div class="wlblocks">
+            <img src="images/letter.png" />
+            <p>
+              <a href="https://www.bbc.co.uk/news/uk-54304318"
+                >Titanic letter could fetch £100,000</a
+              >
+            </p>
+          </div>
+          <div class="wlblocks">
+            <img src="images/hands.png" />
+            <p>
+              <a href="https://www.bbc.co.uk/news/uk-54304318"
+                >Wash your hands, ya basa!</a
+              >
+            </p>
+          </div>
+          <img src="images/arrowR.png" class="rightarrow" />
+          <div id="live">
+            <ul>
+              <li class="bb">
+                <a style="margin-top:30px;" href="">Radio 5 live</a>
+              </li>
+              <li class="bb"><a href="">Osborne questioned on budget</a></li>
+              <li><a href="">BBC News Channel</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

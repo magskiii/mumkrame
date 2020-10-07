@@ -3,136 +3,175 @@
   <head>
     <title>MumKrame</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
   </head>
-  <meta charset="utf-8" />
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet" />
-  <style type="text/css">
-    * {
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    #menu {
-      background-color: #f5cbb7;
-      width: 100%;
-      height: 80px;
-      color: white;
-    }
-    .fixedwidth {
-      width: 1340px;
-      margin: 0 auto;
-    }
-    #logo img {
-      float: left;
-      height: 70px;
-      width: 160px;
-      color: #5c4e5f;
-      margin: 0;
-      padding-right: 100px;
-    }
-    #topmenu {
-      float: left;
-    }
-    #topmenu ul {
-      margin: 0;
-      padding: 0;
-    }
-    #topmenu li {
-      list-style: none;
-      font-family: "Montserrat", sans-serif;
-      color: #5c4e5f;
-      padding: 30px 40px 10px 50px;
-      float: left;
-      text-align: center;
-      font-size: 18px;
-    }
-    #social {
-      float: left;
-      list-style: none;
-      padding: 33px 3px 0 70px;
-    }
-    .resize {
-      width: 13px;
-    }
-    #basket {
-      float: right;
-      padding: 20px 80px 50px 10px;
-    }
-    .size {
-      width: 35px;
-    }
-
-    .break {
-      clear: both;
-    }
-    #main {
-      background-color: #5d6f66;
-      width: 100%;
-      height: 110px;
-      color: white;
-    }
-    #title {
-      font-family: 'Playfair Display', serif;
-      font-size: 50px;
-      text-align: center;
-      padding-left:65px
-    }
-    #handmade {
-      font-family: "Montserrat", sans-serif;
-      font-size: 20px;
-      text-align: center;
-    }
-
-  </style>
   <body>
-    <div id="container">
-      <div id="menu">
-        <div class="fixedwidth">
-          <div id="logo"><img src="images/shopname.png" /></div>
-        </div>
+    <div class="container">
+      <div class="fixedwidth">
+        <div class="navigation">
+          <div class="navigation-logo"><img src="images/shopname.png" /></div>
 
-        <div id="topmenu">
-          <ul>
-            <li>
-              <a href="/pages/home.html">
-                Home
-              </a>
-            </li>
-            <li>Shop</li>
-            <li>About</li>
-            <li>Special Orders</li>
-            <li>FAQ</li>
-          </ul>
-        </div>
-        <div id="social">
-          <img class="resize" src="images/fb.png" />
-          <img class="resize" src="images/insta.png" />
-          <!-- <svg
-            xmlns="http://www.w3.org/2000/svg" 
-            width="24"
-            height="24"
-            viewBox="0 0 24 24">
-              <path 
-              style="stroke:#5c4e5f;stoke-width:1px;fill:none;"
-              d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-            </svg> -->
-        </div>
-        <div id="basket">
-          <img class="size" src="images/basket.png" />
+          <div class="navigation-links">
+            <ul>
+              <li>
+                <a href="/pages/home.html">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="/pages/home.html">
+                  Shop
+                </a>
+              </li>
+              <li>
+                <a href="/pages/home.html">
+                  About
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="navigation-menu">
+            <div class="menu-social">
+              <img class="resize" src="images/fb.png" />
+              <img class="resize" src="images/insta.png" />
+            </div>
+            <div class="menu-basket">
+              <img class="size" src="images/basket.png" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-    <div id="main">
-        <div class="fixedwidth">
-      <p id="title">Crochet & Macrame </p>
-        <p id="handmade"> Handmade for your storage </p>
+    <!-- HERO -->
+    <div id="hero">
+      <div class="fixedwidth">
+        <h1 id="title">Crochet & Macrame</h1>
+        <p id="sub-title">Handmade for your storage</p>
+        <button class="cta">Buy Now</button>
+      </div>
     </div>
+    <!-- Section Product -->
+    <div class="section">
+      <!-- left hand side -->
+      <div class="product-image">
+        <img src="images/shop-item-beat.jpg" />
+      </div>
+      <!-- right hand side -->
+      <div class="product-content">
+        <h2 class="section-heading">Crochet baskets for</h2>
+        <ul class="product-feature-list">
+          <li>Children's Toys</li>
+          <li>Plant pots</li>
+          <li>Anything you want to put away</li>
+        </ul>
+        <button class="product-discover">Discover more</button>
+      </div>
+    </div>
+    <!-- Section Product -->
+    <div class="section">
+      <!-- right hand side -->
+      <div class="product-image">
+        <img src="images/shop-item-macrame.jpg" />
+      </div>
+      <!-- left hand side -->
+      <div class="product-content">
+        <h2 class="section-heading">Hanging Macrame</h2>
+        <ul class="product-description">
+          <li>Plant hangers</li>
+          <li>Bottle bags</li>
+          <li>Decor</li>
+        </ul>
+        <button class="product-discover">Discover more</button>
+      </div>
+    </div>
+
+    <!-- SHOP -->
+    <div class="shop">
+      <h2 class="shop-title">Shop new arrivals</h2>
+      <div class="shop-carousel">
+        ß
+        <li class="shop-item">
+          <img src="images/shop-item-beat.jpg" alt="" class="shop-item-image" />
+          <div class="rating">*****</div>
+          <p class="shop-item-name">Bear Basket</p>
+          <p class="shop-item-price">£30</p>
+        </li>
+        <li class="shop-item">
+          <img
+            src="images/shop-item-macrame.jpg"
+            alt=""
+            class="shop-item-image"
+          />
+          <div class="rating">*****</div>
+          <p class="shop-item-name">Wine bottle bag</p>
+          <p class="shop-item-price">£5</p>
+        </li>
+      </div>
+    </div>
+
+    <!-- About -->
+    <div class="about">
+      <div class="about-content">
+        <div class="about-avatar">
+          <img src="images/avatar.JPG" alt="" />
+        </div>
+        <p class="about-copy">
+          Cupcake ipsum dolor sit amet topping pie. Jelly beans jelly chocolate
+          cake bear claw dessert. Cookie pie apple pie. Tootsie roll muffin
+          candy canes I love soufflé tiramisu danish chocolate lollipop. Cupcake
+          soufflé halvah. Chocolate cake lollipop tootsie roll. Chupa chups
+          dessert chocolate lollipop toffee. Bear claw candy canes biscuit sweet
+          pie jelly-o marzipan. Bear claw fruitcake sesame snaps. Fruitcake
+          danish donut cake pudding wafer. Dragée jelly beans chocolate
+          chocolate cake cake carrot cake dessert. Bear claw cookie sesame snaps
+          caramels marzipan pudding jelly beans.
+        </p>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact">
+      <div class="contact-header">
+        <h2>Get in touch</h2>
+        <p>Special orders? Ask us!</p>
+      </div>
+      <form action="" class="contact-form">
+        <input
+          type="text"
+          placeholder="name"
+          class="contact-form-name"
+          id="contact-form-name"
+        />
+        <input
+          type="email"
+          placeholder="email"
+          class="contact-form-email"
+          id="contact-form-email"
+        />
+        <textarea
+          name="message"
+          id="contact-form-message"
+          cols="30"
+          rows="10"
+          placeholder="Typer your message here"
+          class="contact-form-message"
+        ></textarea>
+      </form>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="copyright">It's mineeee</p>
+    </footer>
   </body>
 </html>

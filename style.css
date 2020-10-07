@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  margin: 0;
+}
+.fixedwidth {
+  width: 1440px;
+}
+#navigation {
+  background-color: #f5cbb7;
+  width: 100%;
+  height: 80px;
+  color: white;
+}
+
+.navigation-logo img {
+  float: left;
+  height: 70px;
+  width: 160px;
+  color: #5c4e5f;
+  margin: 0;
+  padding-right: 100px;
+}
+.navigation-links {
+  float: left;
+}
+.navigation-links ul {
+  margin: 0;
+  padding: 0;
+}
+.navigation-links li {
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+  color: #5c4e5f;
+  padding: 30px 40px 10px 50px;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+  color: #5c4e5f;
+}
+a:hover {
+  font-weight: bolder;
+  font-size: 20px;
+  background-image: linear-gradient();
+}
+.navigation-menu {
+  float: left;
+  list-style: none;
+  padding: 33px 3px 0 70px;
+}
+.resize {
+  width: 13px;
+}
+#basket {
+  float: right;
+  padding: 20px 80px 50px 10px;
+}
+.size {
+  width: 35px;
+}
+.break {
+  clear: both;
+}
+#hero {
+  background-color: #5d6f66;
+  width: 100%;
+  height: 800px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #5d6f66;
+  background-image: url(images/yarn.jpg);
+}
+#title {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+  text-align: center;
+  padding-left: 65px;
+}
+#subtitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+.shop-item > img {
+  width: 10rem;
+}
+.product-image > img {
+  width: 15rem;
+}
+.about-avatar {
+  overflow: hidden;
+  border-radius: 50%;
+  width: 10rem;
+}
+.about-avatar > img {
+  width: 100%;
+}

@@ -20,8 +20,9 @@
     <div class="container">
       <div class="fixedwidth">
         <div class="navigation">
-          <div class="navigation-logo"><img src="images/shopname.png" /></div>
-
+          <div class="navigation-logo">
+            <a href="pages/home.html"><img src="images/shopname.png" /> </a>
+          </div>
           <div class="navigation-links">
             <ul>
               <li>
@@ -30,12 +31,12 @@
                 </a>
               </li>
               <li>
-                <a href="/pages/home.html">
+                <a href="/pages/shop.html">
                   Shop
                 </a>
               </li>
               <li>
-                <a href="/pages/home.html">
+                <a href="/pages/About.html">
                   About
                 </a>
               </li>
@@ -43,11 +44,17 @@
           </div>
           <div class="navigation-menu">
             <div class="menu-social">
-              <img class="resize" src="images/fb.png" />
-              <img class="resize" src="images/insta.png" />
+              <a href="pages/fb.html">
+                <img class="resize" src="images/fb.png" />
+              </a>
+              <a href="pages/fb.html">
+                <img class="resize" src="images/insta.png" />
+              </a>
             </div>
             <div class="menu-basket">
-              <img class="size" src="images/basket.png" />
+              <a href="pages/basket.html">
+                <img class="size" src="images/basket.png" />
+              </a>
             </div>
           </div>
         </div>
@@ -55,12 +62,11 @@
     </div>
     <!-- HERO -->
     <div id="hero">
-      <div class="fixedwidth">
-        <h1 id="title">Crochet & Macrame</h1>
-        <p id="sub-title">Handmade for your storage</p>
-        <button class="cta">Buy Now</button>
-      </div>
+      <h1 id="title">Crochet & Macrame</h1>
+      <p id="sub-title">Handmade for your storage</p>
+      <button class="cta">Buy Now</button>
     </div>
+
     <!-- Section Product -->
     <div class="section">
       <!-- left hand side -->
@@ -70,16 +76,35 @@
       <!-- right hand side -->
       <div class="product-content">
         <h2 class="section-heading">Crochet baskets for</h2>
-        <ul class="product-feature-list">
-          <li>Children's Toys</li>
-          <li>Plant pots</li>
-          <li>Anything you want to put away</li>
-        </ul>
+
+        <a
+          class="product-feature-list"
+          href="pages/crochet.html"
+          target="_blank"
+          >Children's Toys</a
+        >
+        <br />
+        <a
+          class="product-feature-list"
+          href="pages/hangingmacrame.html"
+          target="_blank"
+          >Plant pots</a
+        >
+        <br />
+        <a
+          class="product-feature-list"
+          href="pages/hangingmacrame.html"
+          target="_blank"
+        >
+          Anything you want to put away
+        </a>
+
         <button class="product-discover">Discover more</button>
       </div>
     </div>
+
     <!-- Section Product -->
-    <div class="section">
+    <div class="section --reverse">
       <!-- right hand side -->
       <div class="product-image">
         <img src="images/shop-item-macrame.jpg" />
@@ -87,11 +112,28 @@
       <!-- left hand side -->
       <div class="product-content">
         <h2 class="section-heading">Hanging Macrame</h2>
-        <ul class="product-description">
-          <li>Plant hangers</li>
-          <li>Bottle bags</li>
-          <li>Decor</li>
-        </ul>
+
+        <a
+          class="product-feature-list"
+          href="pages/hangingmacrame.html"
+          target="_blank"
+          >Plant hangers
+        </a>
+        <br />
+        <a
+          class="product-feature-list"
+          href="pages/hangingmacrame.html"
+          target="_blank"
+          >Bottle bags</a
+        >
+        <br />
+        <a
+          class="product-feature-list"
+          href="pages/hangingmacrame.html"
+          target="_blank"
+          >Decor</a
+        >
+
         <button class="product-discover">Discover more</button>
       </div>
     </div>
@@ -100,25 +142,49 @@
     <div class="shop">
       <h2 class="shop-title">Shop new arrivals</h2>
       <div class="shop-carousel">
-        ß
         <li class="shop-item">
           <img src="images/shop-item-beat.jpg" alt="" class="shop-item-image" />
-          <div class="rating">*****</div>
-          <p class="shop-item-name">Bear Basket</p>
+          <div class="rating">
+            &#127775;&#127775;&#127775;&#127775;&#127775;
+          </div>
+          <a
+            class="shop-item-name"
+            href="pages/hangingmacrame.html"
+            target="_blank"
+            >Bear Basket
+          </a>
+
           <p class="shop-item-price">£30</p>
         </li>
         <li class="shop-item">
-          <img
-            src="images/shop-item-macrame.jpg"
-            alt=""
-            class="shop-item-image"
-          />
-          <div class="rating">*****</div>
-          <p class="shop-item-name">Wine bottle bag</p>
+          <img src="images/bottle-macrame.jpg" alt="" class="shop-item-image" />
+          <div class="rating">
+            &#127775;&#127775;&#127775;&#127775;&#127775;
+          </div>
+          <a
+            class="shop-item-name"
+            href="pages/hangingmacrame.html"
+            target="_blank"
+            >Wine bottle bag</a
+          >
           <p class="shop-item-price">£5</p>
+        </li>
+        <li class="shop-item">
+          <img src="images/basket-cars.jpg" alt="" class="shop-item-image" />
+          <div class="rating">
+            &#127775;&#127775;&#127775;&#127775;&#127775;
+          </div>
+          <a
+            class="shop-item-name"
+            href="pages/hangingmacrame.html"
+            target="_blank"
+            >Bottle Green Basket</a
+          >
+          <p class="shop-item-price">£15</p>
         </li>
       </div>
     </div>
+    <br />
 
     <!-- About -->
     <div class="about">
@@ -144,34 +210,35 @@
     <div class="contact">
       <div class="contact-header">
         <h2>Get in touch</h2>
-        <p>Special orders? Ask us!</p>
+        <p>Anything you want to know? Ask us!</p>
       </div>
       <form action="" class="contact-form">
         <input
           type="text"
-          placeholder="name"
+          placeholder="Name"
           class="contact-form-name"
           id="contact-form-name"
         />
         <input
           type="email"
-          placeholder="email"
+          placeholder="Email"
           class="contact-form-email"
           id="contact-form-email"
         />
         <textarea
           name="message"
           id="contact-form-message"
-          cols="30"
-          rows="10"
-          placeholder="Typer your message here"
+          cols="25"
+          rows="6"
+          placeholder="Type your message here"
           class="contact-form-message"
         ></textarea>
+        <input type="submit" value="Submit" />
       </form>
     </div>
     <!-- Footer -->
     <footer class="footer">
-      <p class="copyright">It's mineeee</p>
+      <p class="copyright">&#169; MumKrame 2020</p>
     </footer>
   </body>
 </html>
